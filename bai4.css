@@ -1,0 +1,58 @@
+h3{
+    color: orange;
+}
+
+#title{
+    background-color: aqua; /* id dungg dấu #*/
+}
+.bg{
+    background-color: bisque;/* class dùng dấu . */
+}
+p{
+    color: red;
+    background-color: blue;
+}
+
+.box1{
+    background-color: rebeccapurple;
+}
+
+.box2{
+    background-color: red;
+    margin: 50px 100px; 
+    /*set cách các phần tử xung quanh 100px */
+    /* Trên dưới 50px*/
+    /* Trái phải 100px */
+    /* Trên phải dưới trái : theo vòng đho */
+    width: 50%;
+}
+
+.box3{
+    background-color: navy;
+    width: 50%;
+    /* margin: auto Căn khối ra giữa */
+    margin: 50px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
