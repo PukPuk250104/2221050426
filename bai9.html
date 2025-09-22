@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="bai9.css">
+    <script src="bai9.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("Hello world "+"<br>")
+        let hoTen="Nguyen Tan Phuc" + "<br>"; 
+        //Cú pháp khai báo biến:
+        //let Tên biến= Giá trị
+        //Nối chuỗi dùng dấu +
+        document.writeln(hoTen);
+        
+        // Toán Tử
+        let soThuNhat=10;
+        let soThuHai="10";
+        let ketQua= 0;
+        // Phép cộng +
+        // Phép trừ -
+        // Phép chia /
+        // Phép nhân *
+        
+        // Tăng 1: ++
+        // Trừ 1: --
+        
+        // ketQua= soThuNhat + soThuHai;
+        // ketQua--
+        // document.writeln(ketQua);
+
+        // Phép gán += -= *= /= %=
+        // soThuNhat+=soThuHai;
+        // document.writeln(soThuNhat);
+
+        // Phép gán == != ! > < <= >=
+        // == : so sánh giá trị
+        // === : ss giá trị + kiểu dữ liệu
+        // !== : ss giá trị + kiểu dữ liệu, 1 trong 2 đúng = true
+        document.writeln(soThuNhat !== soThuHai);
+
+        let thongTinSinhVien={
+            hoTen:"Nguyen Tan Phuc",
+            msv:"2221050426",
+            gioiTinh: true,
+            tuoi: 21,
+            lop: "HTTT_K67A",
+        };
+        let diaChi={
+            thanhpho: "Hung Yen",
+            phuong: "Kim Dong",
+            duong:"Ngo xa",
+            soNha:"21",
+        };
+        document.writeln( "<br>"+"xin chào " + thongTinSinhVien.hoTen + thongTinSinhVien.tuoi +" tuổi ");
+        thongTinSinhVien.diaChiNhaPuk=diaChi;
+        document.writeln("<br>"+ "Xin chào " + thongTinSinhVien.hoTen +" "+ thongTinSinhVien.tuoi +" tuổi" + " Địa chỉ " + thongTinSinhVien.diaChiNhaPuk.thanhpho +thongTinSinhVien.diaChiNhaPuk.phuong)
+        namNay=2025
+        namSinh=0
+        namSinh=namNay-thongTinSinhVien.tuoi
+        document.writeln("Puk sinh năm:"+ namSinh)
+    </script>
+</body>
+</html>

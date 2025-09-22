@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(23, 22, 22);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.box{
+    height: 400px;
+    width: 40%;
+    background-color: rgb(14, 14, 14); 
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.title-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:25px;
+}
+.log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: none;
+
+}
+
+.note-email{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: white;
+}
+.dangnhap-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.abc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: antiquewhite;
+    
+}
+.under-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
