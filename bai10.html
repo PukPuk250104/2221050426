@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let donHang={
+            maDonHang:"2221050426",
+            thongTinKhachHang:{
+                hoTen:"Nguyen Tan Phuc",
+                soDienThoai:"0976787959",
+                ttNhanVien:true,
+            },
+            danhSachSanPham:{
+                Coffee:{ 
+                    maSanPham:"123",
+                    tenSanPham:"Coffee",
+                    soLuong:1,
+                    giaTien:10,
+                },
+                Matcha:{ 
+                    maSanPham:"456",
+                    tenSanPham:"Matcha",
+                    soLuong:1,
+                    giaTien:11,
+                },
+                traSua:{ 
+                    maSanPham:"789",
+                    tenSanPham:"Tra Sua",
+                    soLuong:1,
+                    giaTien:12,
+                }
+            },
+            trangThaiThanhToan:true,
+            diaChiGiaoHang:"Ha Noi"
+        }
+        document.writeln(donHang.danhSachSanPham.Matcha.tenSanPham)
+        tongSoTien_Coffee=donHang.danhSachSanPham.Coffee.soLuong * donHang.danhSachSanPham.Coffee.giaTien
+        tongSoTien_Matcha=donHang.danhSachSanPham.Matcha.soLuong * donHang.danhSachSanPham.Matcha.giaTien
+        tongSoTien_TraSua=donHang.danhSachSanPham.traSua.soLuong * donHang.danhSachSanPham.traSua.giaTien
+        tongSoTienDonHang=tongSoTien_Coffee+tongSoTien_Matcha+tongSoTien_TraSua
+        document.writeln("Tong so tien don hang" + tongSoTienDonHang)
+        // Độ dài của chuỗi Lenght()
+        document.writeln("Độ dài của mã đơn hàng:" + donHang.maDonHang.length);
+
+        //Lấy ra một ký tự trong chuỗi
+        var myString="Puk Puk";
+        document.writeln(myString[3] + "<br>")
+
+        //Cắt chuỗi
+        document.writeln(myString.slice(1,4));
+
+        //Thay thế chuỗi
+        document.writeln(myString.replace("Puk", ""))
+
+        //Đổi chữ hoa thành chữ thường và ngc lại
+        //document.writeln(myString.toLocaleUpperCase())
+        //document.writeln(myString.toLocaleLowerCase())
+
+        //Tìm kiếm chuỗi
+        document.writeln(myString.indexOf("P")) //Trả về vị trí tìm kiếm, nếu ko có trả về -1.
+        document.writeln(myString.includes("u")) // trả về true nếu có, trả về False nếu ko có.
+
+        // Tách chuỗi thành một mảng       
+         document.writeln(myString.split('u'));
+
+       
+        //Kiểm tra chuỗi
+        let danhSach=["Nguyen Puk","Nguyen Tiến","Bui Hiếu","Tran Minh"]
+        document.writeln(danhSach[1])
+        document.writeln(danhSach[1].startsWith("Nguyen"))
+
+        //Kiểu Number
+        //Chuyển một chuỗi thành một số
+        let so="123"
+        document.writeln(typeof(so))
+        document.writeln(typeof(Number(so)))
+        
+        //Định dạng số thập phân
+        var pi=3.14159;
+        document.writeln(pi.toFixed(3))
+
+        //Kiểm tra số
+        //isNaN(): kiểm tra xem 1 giá trị có phải NaN ko
+        //isFinite(): Kiểm tra xem giá trị có phải là 1 số hữu hạn hay ko
+
+        //Hàm Date: là một đối tượng tích hợp tring js
+        let toDay = new Date() //định dạng ngày cụ thể "2025-09-25"
+        document.writeln("<br>"+toDay)
+
+        document.writeln("<br>" + toDay.getDate())
+
+
+
+    </script>
+</body>
+</html>
