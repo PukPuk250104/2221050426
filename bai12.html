@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Switch
+        // var toDay=new Date()
+        //     theDay=toDay.getDay()
+        // switch(theDay){
+        //     case 5:
+        //         document.writeln("Finally Friday!")
+        //         break;
+        //     case 6:
+        //         document.writeln("Sleepy Saturday")
+        //         break;
+        //     case 0:
+        //         document.writeln("Super Sunday")
+        //         break;
+        //     default: 
+        //         document.writeln("I'm looking forward to this weekend")
+        // }
+
+        //For
+        // let arrNum=[0,1,2,3,4,5]
+        // for(let i=0; i<=1000; i++){
+        //     document.writeln( i +"Anh xin lỗi ! <br>")
+        // }
+        // document.writeln(arrNum.length)
+        
+        // for(let j=0; j<arrNum.length;j++){
+        //     document.writeln(arrNum[j] + "<br>");
+
+        // }
+
+        // let danhSach=["Nguyễn Tấn Phúc","Nguyễn Trung Hiếu ","Dương Gia Bình","Hà Văn DŨng","Lương Ngọc Bích"]
+        // for (let i=0;i<danhSach.length;i++){
+        //     document.writeln("Xin chào: "+danhSach[i] + "<br>")
+        // }
+
+        // let i=0
+        // while(i<=10){
+        //     document.writeln("The number is" + i +"<br>")
+        //     i++;
+        // }
+
+        //Popup boxes
+        // alert("Xin chào bạn!")
+        // confirm box
+        // let result=confirm("Press a button")
+        // // document.writeln(result)
+        // if (result==true){
+        //     document.writeln("Press Ok! <br>")
+        // }
+        // else{ document.writeln("Press Cancel! <br>")}
+        // // Prompt box
+        // prompt("sometext","default value")
+        // document.writeln(result)
+
+        //Function: function + tên hàm + {Code}
+        //Hàm ko tham số
+        // function sayHello(){
+        //     document.writeln("hello")
+        // }
+        // sayHello();
+        //Có tham số
+        // function sayHello2(name, age){
+        //     document.writeln("hello " + name + " " +age+" tuổi!")
+        // }
+        // let nameP=prompt("Tên","Điền tên")
+        // let ageP=prompt("Tuổi","Điền tuổi")
+
+        // sayHello2("KelMin đom đóm",27)
+        // let name = "Anh Phương Tuấn";// biến name là biến toàn cục
+
+        // function sayHello(){
+        //     let name="Anh phương tuấn"// biến cục bộ
+        //     document.writeln("Hello " + name)
+        // }
+        // sayHello()
+        // document.writeln(name)
+
+        //Ví dụ: Kiểm tra số chẵn lẻ, kết hợp prompt
+        //Người dùng đã nhập số -> tạo hàm kiểm tra số chẵn lẻ => In ra kêt quả
+
+        let So=prompt("Điền số","Số")
+        function kiemTra(){
+        let socuoi= parseInt(So[So.length -1])
+        typeof(Number(socuoi))
+        if (isNaN(So)){
+            document.writeln(So + " không phải là số")
+        }
+        else if (socuoi%2==0){
+             document.writeln(So +' là số chẵn')
+        }
+        else{
+            document.writeln(So +' là số lẻ')
+        }
+        // So (abc) is not a number
+        //  if (isNaN(So)==false){
+        //     So =parseFloat(So);
+        //      check(So);}
+        //  else{
+        //     document.writeln("Vui lòng nhập lại số")
+        //  }
+        }
+        kiemTra()
+    </script>
+</body>
+</html>
